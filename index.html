@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Campaign IDs: Generate unique campaign IDs from common analytics query parameters</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <div class="mt-5">
+                <h1>Campaign IDs</h1>
+                <p>Generate unique campaign IDs from common analytics query parameters.</p>
+            </div>
+
+            <div class="mt-5 jumbotron">
+                <form id="generate-form">
+                    <div class="form-group">
+                        <label>Paste your URLs or query strings here. One URL or query string per line.</label>
+                        <textarea cols=150 rows=10 id="queries" class="form-control"></textarea>
+                    </div>
+                    <button id="generate-btn" class="btn btn-primary" role="button">Generate</button>
+                </form>
+            </div>
+
+            <div id="results" class="mt-5"></div>
+        </div>
+        <script src="md5.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
